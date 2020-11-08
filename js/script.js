@@ -1,11 +1,19 @@
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-console.log('Gracz wpisał: ' + playerInput);
+console.log('Wylosowana liczba to: ' + randomNumber);
 
-let playerMove = 'nieznany ruch';
+let computerMove = 'nieznany ruch';
 
-if(playerInput == '1'){
-  playerMove = 'kamień';
+if(randomNumber == 1){
+  computerMove = 'kamień';
 }
 
-printMessage('Twój ruch to: ' + playerMove);
+else if(randonNumber == 2){
+    computerMove = 'papier'
+}
+
+else if(randomNumber == 3){
+    computerMove = 'nożyce'
+}
+
+printMessage('Mój ruch to: ' + computerMove);
