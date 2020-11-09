@@ -1,33 +1,48 @@
+/* Function */
+
+function getMoveName(argMoveId){
+    if(argMoveId == 1){
+      return 'kamień';
+    }
+
+    else if(argMoveId == 2){
+        return 'papier';
+    }
+
+    else if(argMoveId == 3){
+        return 'nożyce';
+    }
+
 /* computer */
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
 
-let computerMove = 'nieznany ruch';
-
+let computerMove = getMoveName(randomNumber);
+/*
 if(randomNumber == 1){
   computerMove = 'kamień';
 }
 
 else if(randonNumber == 2){
-    computerMove = 'papier'
+    computerMove = 'papier';
 }
 
 else if(randomNumber == 3){
-    computerMove = 'nożyce'
+    computerMove = 'nożyce';
 }
 
 printMessage('Mój ruch to: ' + computerMove);
-
+*/
 /* player */
 
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
 console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = 'nieznany ruch';
-
+let playerMove = getMoveName(randomNumber);
+/*
 if(playerInput == '1'){
   playerMove = 'kamień';
 }
@@ -39,7 +54,7 @@ else if(playerInput == '2'){
 else if(playerInput == '3'){
     playerMove = 'możyce';
 }
-
+*/
 printMessage('Twój ruch to: ' + playerMove);
 
 /* results */
