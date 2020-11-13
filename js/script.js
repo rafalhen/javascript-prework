@@ -34,9 +34,8 @@ printMessage('Mój ruch to: ' + computerMove);
 /*
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 */
-console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = getMoveName(playerInput);
+let playerMove = getMoveName(playGame);
 
 printMessage('Twój ruch to: ' + playerMove);
 
