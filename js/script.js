@@ -1,4 +1,4 @@
-
+{
 
 /* Function */
 
@@ -21,11 +21,11 @@ function getMoveName(argMoveId){
 
 /* computer */
 
-let randomNumber = Math.floor(Math.random() * 3 + 1);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
 
-let computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 
 
 printMessage('Mój ruch to: ' + computerMove);
@@ -35,7 +35,7 @@ printMessage('Mój ruch to: ' + computerMove);
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 */
 
-let playerMove = getMoveName(playGame);
+const playerMove = getMoveName(playerImput);
 
 printMessage('Twój ruch to: ' + playerMove);
 
@@ -75,3 +75,4 @@ document.getElementById('play-scissors').addEventListener('click', function(){
     playGame('3');
   });
 
+}
